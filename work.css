@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+.bar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem 0rem;
+    align-items: center;
+    border-bottom: 2px solid #EBEAED;
+}
+
+.start h3{
+    color: darkblue;
+    font-size: 24px;
+}
+
+.middle{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.middle select{
+    color: darkblue;
+    font-weight: 300px;
+    border: none;
+    width: 80px;
+}
+
+.middle a{
+    text-decoration: none;
+    color: darkblue;
+    font-size: 15px;
+    opacity: 0.3;
+}
+
+.ending{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.ending a{
+    text-decoration: none;
+    color: darkblue;
+    font-size: 14px; 
+}
+
+button{
+    color: darkblue;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    padding: 8px 8px;
+    background-color: white;
+    border: 2px solid #EBEAED;
+}
+
+.hamburger{
+    display: none;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.images{
+    display: flex;
+    padding: 3rem 0rem;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.images h4{
+    font-size: 22px;
+    line-height: 32px;
+    text-align: left;
+    color: darkblue;
+    opacity: 0.9;
+    padding-top: 1rem;
+
+}
+
+.images p{
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #15143966;
+    width: 213px;
+    padding-top: 5px;
+}
+
+.img-1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.img-2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.list-head{
+    padding: 3rem 0rem;
+    color: darkblue;
+}
+
+.list{
+    display: flex;
+    padding: 1rem 0rem ;
+    gap: 75px;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+    color: darkblue;
+}
+
+@media (max-width: 992px) {
+    .bar{
+        justify-content: space-around;
+    }
+
+    .middle{
+        display: none;
+    }
+
+    .ending{
+        display: none;
+    }
+    
+    .start h3{
+        font-size: 24px;
+    }
+
+    .hamburger{
+        display: flex;
+        color: #1E0E62;
+    }
+
+    main{
+        flex-direction: column;
+        padding-left: 1.5rem;
+    }
+
+    .images{
+        flex-direction: column;
+    }
+
+    .list-head{
+        padding-top: 0rem;
+    }
+
+    .list{
+        gap: 70px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
